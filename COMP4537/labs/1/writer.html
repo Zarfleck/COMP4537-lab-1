@@ -1,0 +1,35 @@
+<html>
+    <head>
+        <title>Writer</title>
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/writer.css">
+        <script src="lang/messages/en/user.js"></script>
+    </head>
+    <body>
+        <div class="timestamp-display" id="lastSaved">Last saved: Never</div>
+        
+        <div class="container writer-container">
+            <h1 id="writerTitle">Writer</h1>
+            
+            <div class="note-form">
+                <input type="text" id="noteTitle" placeholder="Note title..." maxlength="100">
+                <textarea id="noteContent" placeholder="Write your note here..." rows="6"></textarea>
+                <div class="form-buttons">
+                    <button id="addNote" class="btn-primary">Add Note</button>
+                    <button id="updateNote" class="btn-secondary" style="display: none;">Update Note</button>
+                    <button id="cancelEdit" class="btn-cancel" style="display: none;">Cancel</button>
+                </div>
+            </div>
+            
+            <div class="notes-list" id="notesList">
+                <!-- Notes will be displayed here -->
+            </div>
+            
+            <div class="button-container">
+                <button onclick="window.location.href='index.html'" id="backToHomeBtn">Back to Home</button>
+            </div>
+        </div>
+        
+        <script src="js/writer.js"></script>
+    </body>
+</html>

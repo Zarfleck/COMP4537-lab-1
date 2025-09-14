@@ -1,0 +1,30 @@
+<html>
+    <head>
+        <title>Home</title>
+        <link rel="stylesheet" href="css/style.css">
+        <script src="lang/messages/en/user.js"></script>
+    </head>
+    <body>
+        <div class="container">
+            <h1 id="welcomeTitle">Welcome</h1>
+            <div class="button-container">
+                <button onclick="window.location.href='reader.html'" id="readerBtn">
+                    Reader
+                </button>
+                <button onclick="window.location.href='writer.html'" id="writerBtn">
+                    Writer
+                </button>
+            </div>
+        </div>
+        <script>
+            // Update text content with messages
+            document.addEventListener('DOMContentLoaded', () => {
+                if (window.messages) {
+                    document.getElementById('welcomeTitle').textContent = window.messages.index.welcome;
+                    document.getElementById('readerBtn').textContent = window.messages.index.reader;
+                    document.getElementById('writerBtn').textContent = window.messages.index.writer;
+                }
+            });
+        </script>
+    </body>
+</html>

@@ -1,0 +1,26 @@
+<html>
+    <head>
+        <title>Reader</title>
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/reader.css">
+        <script src="lang/messages/en/user.js"></script>
+    </head>
+    <body>
+        <div class="timestamp-display" id="lastRetrieved">Last retrieved: Never</div>
+        
+        <div class="container reader-container">
+            <h1 id="readerTitle">Reader</h1>
+            <p class="page-description" id="readerDescription">View all notes created in the Writer page</p>
+            
+            <div class="notes-display" id="notesDisplay">
+                <!-- Notes will be displayed here -->
+            </div>
+            
+            <div class="button-container">
+                <button onclick="window.location.href='index.html'" id="backToHomeBtn">Back to Home</button>
+            </div>
+        </div>
+        
+        <script src="js/reader.js"></script>
+    </body>
+</html>
